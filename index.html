@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -12,26 +11,23 @@
 <body>
   <header>
     <h1>AI Mental Health Face Analyzer</h1>
-    <p>Analisis ekspresi, umur, gender & kondisi wajah secara real-time.</p>
+    <p>Analisis ekspresi wajah secara real-time.</p>
   </header>
+
   <main>
     <div class="camera-wrapper">
       <video id="video" autoplay muted></video>
       <canvas id="overlay"></canvas>
     </div>
-        <div class="sidebar">
-            <button id="start-btn">Start Camera</button>
-            <h2>Hasil Analisis</h2>
-        <div class="info-box">
-            <p><b>Ekspresi:</b> <span id="exp">-</span></p>
-            <p><b>Umur:</b> <span id="age">-</span></p>
-            <p><b>Gender:</b> <span id="gender">-</span></p>
-        </div>
-        <div class="recommendation">
-            <h3>Rekomendasi</h3>
-            <p id="advice">Belum ada deteksi.</p>
-        </div>
-        </div>
+
+    <div class="sidebar">
+      <button id="start-btn">Start Camera</button>
+
+      <div class="recommendation">
+        <h3>Rekomendasi</h3>
+        <p id="advice">Belum ada deteksi.</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
