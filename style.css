@@ -1,0 +1,146 @@
+/* =========================
+   RESET & FONT
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f5fdf8; /* soft mint/white */
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* =========================
+     HEADER
+  ========================= */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 36px; /* lebih besar */
+    font-weight: 700;
+    color: #2c6e49; /* soft green */
+  }
+  
+  header p {
+    font-size: 18px; /* lebih besar */
+    color: #4f7461;
+    margin-top: 10px;
+    opacity: 0.85;
+  }
+  
+  /* =========================
+     MAIN LAYOUT
+  ========================= */
+  main {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* =========================
+     CAMERA WRAPPER
+  ========================= */
+  .camera-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 650px; /* agak lebih besar */
+    min-width: 300px;
+  }
+  
+  #video,
+  #overlay {
+    width: 100%;
+    height: 450px; /* sedikit lebih tinggi */
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  /* =========================
+     SIDEBAR
+  ========================= */
+  .sidebar {
+    width: 300px; /* sedikit lebih lebar */
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  /* BUTTON */
+  #start-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #4caf88;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  #start-btn:hover {
+    background: #3e7c6a;
+  }
+  
+  /* SIDEBAR TITLES */
+  .sidebar h2 {
+    font-size: 22px; /* lebih besar */
+    font-weight: 600;
+    color: #2c6e49;
+  }
+  
+  /* INFO BOX */
+  .info-box {
+    background: #e8f6f0;
+    border-left: 5px solid #4caf88;
+    padding: 14px;
+    border-radius: 8px;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  
+  /* RECOMMENDATION BOX */
+  .recommendation {
+    background: #f0fdf9;
+    border-left: 5px solid #8fd4b3;
+    padding: 14px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .camera-wrapper,
+    .sidebar {
+      max-width: 95%;
+    }
+  }
+  
